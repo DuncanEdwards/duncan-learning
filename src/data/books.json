@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "The Dragon's Promise",
+    "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51d6w-BE7RL._SY291_BO1,204,203,200_QL40_ML2_.jpg",
+    "genres": ["fantasy", "young adult"],
+    "author": "Elizabeth Lim"
+  },
+  {
+    "id": 2,
+    "title": "The Blade Itself",
+    "imageUrl": "https://m.media-amazon.com/images/I/51FJqg+dkSL.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Joe Abercrombie"
+  },
+  {
+    "id": 3,
+    "title": "The Name of the Wind",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/517+fgdv85L._SX331_BO1,204,203,200_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Patrick Rothfuss"
+  },
+  {
+    "id": 4,
+    "title": "The Wise Man's Fear",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51+sl6Lcv2L._SX307_BO1,204,203,200_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Patrick Rothfuss"
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51p3WTQUhhL._SX328_BO1,204,203,200_.jpg",
+    "genres": ["fantasy", "classic", "adventure"],
+    "author": "J R R Tolkein"
+  },
+  {
+    "id": 6,
+    "title": "The Fellowship of the Ring",
+    "imageUrl": "https://cdn.hatchards.co.uk/bookjackets/large/9780/2611/9780261103573.jpg",
+    "genres": ["fantasy", "classic", "adventure"],
+    "author": "J R R Tolkein"
+  },
+  {
+    "id": 7,
+    "title": "The Two Towers",
+    "imageUrl": "https://cdn.hatchards.co.uk/bookjackets/large/9780/2611/9780261103580.jpg",
+    "genres": ["fantasy", "classic", "adventure"],
+    "author": "J R R Tolkein"
+  },
+  {
+    "id": 8,
+    "title": "The Return of the King",
+    "imageUrl": "https://cdn.hatchards.co.uk/bookjackets/large/9780/2611/9780261103597.jpg",
+    "genres": ["fantasy", "classic", "adventure"],
+    "author": "J R R Tolkein"
+  },
+  {
+    "id": 9,
+    "title": "The Martian",
+    "imageUrl": "https://cdn.hatchards.co.uk/bookjackets/large/9781/7850/9781785031137.jpg",
+    "genres": ["science fiction", "space", "adventure"],
+    "author": "Andy Weir"
+  },
+  {
+    "id": 10,
+    "title": "Leviathon Wakes",
+    "imageUrl": "https://m.media-amazon.com/images/I/51HgrMkErvL._SY346_.jpg",
+    "genres": ["science fiction", "space"],
+    "author": "James S. A. Corey"
+  },
+  {
+    "id": 11,
+    "title": "Caliban's War",
+    "imageUrl": "https://cdn.hatchards.co.uk/bookjackets/large/9781/8414/9781841499918.jpg",
+    "genres": ["science fiction", "space"],
+    "author": "James S. A. Corey"
+  },
+  {
+    "id": 12,
+    "title": "Abbadon's Gate",
+    "imageUrl": "https://m.media-amazon.com/images/I/51ALOm3KVvL._SY346_.jpg",
+    "genres": ["science fiction", "space"],
+    "author": "James S. A. Corey"
+  },
+  {
+    "id": 13,
+    "title": "Cibola Burn",
+    "imageUrl": "https://m.media-amazon.com/images/I/91E-jNMBuJL._AC_UY218_.jpg",
+    "genres": ["science fiction", "space"],
+    "author": "James S. A. Corey"
+  },
+  {
+    "id": 14,
+    "title": "Assassin's Apprentice",
+    "imageUrl": "https://m.media-amazon.com/images/I/51RNC6QUzkL._SY346_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Robin Hobb"
+  },
+  {
+    "id": 15,
+    "title": "Royal Assassin",
+    "imageUrl": "https://m.media-amazon.com/images/I/51ht4hRPk9L._SY346_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Robin Hobb"
+  },
+  {
+    "id": 16,
+    "title": "Assassin's Quest",
+    "imageUrl": "https://m.media-amazon.com/images/I/51BJMlHr04L._SY346_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "Robin Hobb"
+  },
+  {
+    "id": 17,
+    "title": "A Wizard of Earthsea",
+    "imageUrl": "https://m.media-amazon.com/images/I/51Cn94GwpoL._SY346_.jpg",
+    "genres": ["fantasy", "young adult"],
+    "author": "Ursula Le Guin"
+  },
+  {
+    "id": 18,
+    "title": "The Tombs of Atuan",
+    "imageUrl": "https://cdn.waterstones.com/bookjackets/large/9781/4732/9781473223578.jpg",
+    "genres": ["fantasy", "young adult"],
+    "author": "Ursula Le Guin"
+  },
+  {
+    "id": 19,
+    "title": "The Farthest Shore",
+    "imageUrl": "https://m.media-amazon.com/images/I/51ggcLFj04L._SY346_.jpg",
+    "genres": ["fantasy", "young adult"],
+    "author": "Ursula Le Guin"
+  },
+  {
+    "id": 20,
+    "title": "A Game of Thrones",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51ZIXVGSnlL._SX302_BO1,204,203,200_.jpg",
+    "genres": ["fantasy", "epic fantasy"],
+    "author": "George R.R. Martin"
+  }
+]

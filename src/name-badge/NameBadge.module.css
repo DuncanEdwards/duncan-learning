@@ -1,0 +1,9 @@
+.main {
+  color: blue;
+  margin: 10px;
+}
+
+.button {
+  background: red;
+  border: solid 3px black;
+}

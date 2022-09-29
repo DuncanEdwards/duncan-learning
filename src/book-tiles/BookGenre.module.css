@@ -1,0 +1,9 @@
+.genre {
+  background-color: darkblue;
+  color: white;
+  margin-right: 6px;
+  padding: 5px;
+  margin-top: 6px;
+  border-radius: 5px;
+  display: inline-block;
+}
