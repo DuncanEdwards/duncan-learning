@@ -7,8 +7,6 @@ import { useState } from "react";
 export const BookPage = () => {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 
-  console.log("a", activeFilters);
-
   const genres = genresJson.sort();
   return (
     <div className={styles.container}>

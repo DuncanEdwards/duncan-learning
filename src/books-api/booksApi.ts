@@ -1,6 +1,6 @@
 import booksJson from "../data/books.json";
 
-const BOOKS_PAGE_SIZE = 9;
+export const BOOKS_PAGE_SIZE = 9;
 
 export type Book = {
   id: number;
@@ -24,10 +24,9 @@ export const getBooks = async (
       ? booksJson.filter((book) => doArraysIntersect(genres, book.genres))
       : booksJson;
 
-  const books = filteredJson.slice(
-    (page - 1) * BOOKS_PAGE_SIZE,
-    BOOKS_PAGE_SIZE
-  );
+  const sliceStart = (page - 1) * BOOKS_PAGE_SIZE;
+  const books = filteredJson.slice(sliceStart, sliceStart + BOOKS_PAGE_SIZE);
+
   return new Promise<BooksResponse>((resolve) =>
     resolve({ books: books, totalBooks: filteredJson.length })
   );

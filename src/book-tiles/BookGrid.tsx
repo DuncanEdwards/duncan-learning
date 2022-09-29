@@ -1,41 +1,53 @@
+import { BOOKS_PAGE_SIZE, Book } from "../books-api/booksApi";
 import { useEffect, useState } from "react";
 
-import { Book } from "../books-api/booksApi";
 import { BookTile } from "./BookTile";
 import { getBooks as apiGetBooks } from "../books-api/booksApi";
 import styles from "./BookGrid.module.css";
 
 type BooksGridState = {
   books: Book[];
-  currentPage: number;
   totalBooks: number;
+};
+
+type PageAndFiltersState = {
+  currentPage: number;
+  activeFilters: string[];
 };
 
 const initialValue = {
   books: [],
-  currentPage: 1,
   totalBooks: 0,
 };
 
 export const BookGrid = ({ activeFilters }: { activeFilters: string[] }) => {
   const [booksGridState, setBooksGridState] =
     useState<BooksGridState>(initialValue);
+  const [pageAndFiltersState, setPageAndFiltersState] =
+    useState<PageAndFiltersState>({ currentPage: 1, activeFilters: [] });
 
-  const { books, currentPage, totalBooks } = booksGridState;
+  const { books, totalBooks } = booksGridState;
 
   useEffect(() => {
-    async function getBooks() {
+    async function getBooksForFilterChange() {
+      const { currentPage, activeFilters } = pageAndFiltersState;
       const response = await apiGetBooks(currentPage, activeFilters);
-
-      console.log("1", activeFilters, response);
-
-      setBooksGridState({
-        ...response,
-        currentPage: 1,
-      });
+      if (currentPage === 1) {
+        setBooksGridState({ ...response });
+      } else {
+        setBooksGridState((state) => ({
+          ...state,
+          books: state.books.concat(response.books),
+        }));
+      }
     }
-    getBooks();
-  }, [currentPage, activeFilters]);
+    getBooksForFilterChange();
+  }, [pageAndFiltersState]);
+
+  useEffect(
+    () => setPageAndFiltersState({ currentPage: 1, activeFilters }),
+    [activeFilters]
+  );
 
   return (
     <div>
@@ -45,7 +57,23 @@ export const BookGrid = ({ activeFilters }: { activeFilters: string[] }) => {
         ))}
       </div>
       <div className={styles.bookmore}>
-        Showing {books.length} of {totalBooks} books
+        <div>
+          Showing {books.length} of {totalBooks} books
+        </div>
+        {books.length !== totalBooks && (
+          <button
+            className={styles.loadmore}
+            onClick={() =>
+              setPageAndFiltersState((state) => ({
+                ...state,
+                currentPage: state.currentPage + 1,
+              }))
+            }
+          >
+            Load books {Math.min(books.length + 1, totalBooks)}-
+            {Math.min(books.length + BOOKS_PAGE_SIZE, totalBooks)}
+          </button>
+        )}
       </div>
     </div>
   );
