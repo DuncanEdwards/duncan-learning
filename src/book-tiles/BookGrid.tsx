@@ -32,6 +32,7 @@ export const BookGrid = ({ activeFilters }: { activeFilters: string[] }) => {
     async function getBooksForFilterChange() {
       const { currentPage, activeFilters } = pageAndFiltersState;
       const response = await apiGetBooks(currentPage, activeFilters);
+      console.log("response", response);
       if (currentPage === 1) {
         setBooksGridState({ ...response });
       } else {
